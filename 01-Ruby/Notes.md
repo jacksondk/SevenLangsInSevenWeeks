@@ -18,6 +18,14 @@ Starting the REPL is done with the `irb` command.
 Everything returns a value - but the value can be `nil`.
 
 
+### Arrays
+
+Arrays are like `[1,2,3]`
+
+### Hashes / Dictionaries
+
+Hashes / Dictionaries are `{ 1 => 'one', 2 => 'two'}`
+
 ### Fun Facts
 
 `true` and `false` are of different classes!?
@@ -27,4 +35,7 @@ evaluates while the single character type evaluates everything.
 
 ## Differences
 
-Integers are now `Integer` - in the book they are `Fixnum`
+Integers are now `Integer` - in the book they are `Fixnum` (or is it - page 25 has a mention of Integer being the superclass of Fixnum)
+
+The method names are like `:name`. For example, the book says `[1].methods.include?('[]')` should
+return `true`. However, now it is `[1].methods.include?( :[] )`.
